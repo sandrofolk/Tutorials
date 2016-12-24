@@ -78,7 +78,10 @@ npm install -g ionic
 ionic info
 
 #Install Typescript
-#npm install -g typescript
+npm install -g typescript
+
+#Using NG2-Translate
+npm install ng2-translate --save
 
 #Start an App
 ionic start --v2 myApp sidemenu
@@ -95,6 +98,7 @@ ionic platform add ios
 
 #Create Pages
 ionic g page nome_da_pagina
+
 #Tutorial
 https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2
 
