@@ -54,6 +54,7 @@ heroku apps:create nome_do_projeto
 heroku plugins:install git://github.com/ddollar/heroku-config.git
 heroku config:push
 git push heroku master --force
+heroku run python manage.py migrate
 
 #github:
 git remote add origin https://github.com/sandrofolk/nome_do_projeto.git
