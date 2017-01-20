@@ -105,6 +105,9 @@ https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2
 
 #Install JWT for Token
 #npm install angular2-jwt
+
+#Install Ionic Cloud
+npm install @ionic/cloud-angular --save
 ```
 
 ## ELM:
