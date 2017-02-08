@@ -117,6 +117,26 @@ npm install @ionic/cloud-angular --save
 npm install -g elm
 ```
 
+## BuildOut Odoo10 no UbuntuServer 16.04:
+```console
+# Install pyenv
+sudo apt-get update
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
+curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+sudo vi ~./.bashrc
+
+# Coloque as 3 próximas linhas no .bashrc
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+continua...
+
+mkdir odoo10
+cd odoo10
+
+```
+
 ## Util:
 
 replace com expressão regular:
