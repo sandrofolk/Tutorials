@@ -123,18 +123,26 @@ npm install -g elm
 sudo apt-get update
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
-sudo vi ~./.bashrc
+sudo vi ~/.bashrc
 
 # Coloque as 3 próximas linhas no .bashrc
 export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-continua...
+#fechar e abrir o terminal!
 
 mkdir odoo10
 cd odoo10
-
+sudo apt-get install python-dev python-setuptools
+sudo apt-get install python-virtualenv
+sudo easy_install pip
+virtualenv . --system-site-packages
+bin/pip install -U pip zc.buildout
+printf "[buildout]\n\nextends =  https://raw.githubusercontent.com/odoo-brazil/odoo-brazil-buildout/10.0/default.cfg" >> common.cfg
+printf "[buildout]\n\nextends = common.cfg" >> buildout.cfg
+bin/buildout
+bin/start_odoo
 ```
 
 ## Util:
