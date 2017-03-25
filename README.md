@@ -20,6 +20,45 @@ source ~/.bash_profile
 python -V
 ```
 
+## Como instalar o python no ubuntu 16.04.2 lts gnome
+```console
+# Verificar a versão do python
+python -V
+
+# Instalar as dependências do pyenv
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
+
+# Instalar o pyenv e copiar as 3 ultimas linhas da instalação
+curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+
+# Editar o arquivo bashrc e profile, colar as linhas copiadas, salvar, sair e reiniciar o terminal
+gedit ~/.bashrc
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+gedit ~/.profile
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Para ver se esta tudo certo basta digitar:
+pyenv
+
+# Para listar as versões de python estão instaladas basta digitar:
+pyenv versions
+
+# Para listar as versões possíveis basta digitar:
+pyenv install -l
+
+# Para instalar o python desejado e torna-lo padrão basta digitar:
+pyenv install 3.6.1
+pyenv global 3.6.1
+
+# Caso esteja tudo correto ao digitar o comando abaixo a versão que acabamos de instalar estará com um asterisco:
+pyenv versions
+```
+
 ## Como criar projetos em django
 ```console
 mkdir pasta_do_projeto
