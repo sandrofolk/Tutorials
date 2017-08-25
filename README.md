@@ -156,6 +156,33 @@ npm install @ionic/cloud-angular --save
 npm install -g elm
 ```
 
+## Angular 4:
+```console
+# Como instalar:
+## Instalar o node.js:
+https://nodejs.org/
+## Verificar se instalou:
+node -v
+## Instalar o CLI:
+npm install -g @angular/cli
+## Verificar se instalou:
+ng -v
+## Instalar o typescript:
+npm install typescript -g
+## Verificar se instalou:
+tsc -v
+
+# Como inicializar um projeto npm em um repositório existente:
+npm init -f    # "-f" é para forçar os valores padrões... sem ele o terminal questiona os valores...
+
+# Como criar um projeto novo em Angular usando o CLI:
+ng new nome-do-projeto --prefix=sigla-do-projeto
+
+# Como instalar pacotes:
+npm install --save nome_do_pacote        # "--save" instala para desenvolvimento e produção
+npm install --save-dev nome_do_pacote    # "--save-dev" instala apenas para o modo de desenvolvimento
+```
+
 ## BuildOut Odoo10 no UbuntuServer 16.04:
 ```console
 # Install pyenv
