@@ -178,12 +178,22 @@ npm init -f    # "-f" é para forçar os valores padrões... sem ele o terminal
 # Como criar um projeto novo em Angular usando o CLI:
 ng new nome-do-projeto --prefix=sigla-do-projeto
 
+# Como criar um novo componente usando o CLI
+ng g c nome-do-componente
+
 # Comando úteis:
 npm start    # Sobe um servidor do projeto na máquina
 
 # Como instalar pacotes:
 npm install --save nome_do_pacote        # "--save" instala para desenvolvimento e produção
 npm install --save-dev nome_do_pacote    # "--save-dev" instala apenas para o modo de desenvolvimento
+```
+
+## Atom editor de texto
+```console
+# Packages uteis
+autoclose-html
+atom-typescript
 ```
 
 ## BuildOut Odoo10 no UbuntuServer 16.04:
