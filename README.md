@@ -171,8 +171,10 @@ ng -v
 npm install typescript -g
 ## Verificar se instalou:
 tsc -v
-## Instalar o json-server para mockar servidor local
+## Instalar o json-server para mockar servidor local com arquivos json:
 npm install -g json-server
+## Para emular o servidor:
+json-server db.json
 
 # Como inicializar um projeto npm em um repositório existente:
 npm init -f    # "-f" é para forçar os valores padrões... sem ele o terminal questiona os valores...
