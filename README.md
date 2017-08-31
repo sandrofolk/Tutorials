@@ -191,6 +191,8 @@ npm start    # Sobe um servidor do projeto na máquina
 # Como instalar pacotes:
 npm install --save nome_do_pacote        # "--save" instala para desenvolvimento e produção
 npm install --save-dev nome_do_pacote    # "--save-dev" instala apenas para o modo de desenvolvimento
+# Exemplo:
+npm install --save @angular/animations@4.0.0  # "@4.0.0" serve para fixar a versão que deseja usar!
 ```
 
 ## Atom editor de texto
