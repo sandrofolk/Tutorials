@@ -186,7 +186,8 @@ ng new nome-do-projeto --prefix=sigla-do-projeto
 ng g c nome-do-componente
 
 # Comando úteis:
-npm start    # Sobe um servidor do projeto na máquina
+npm start        # Sobe um servidor do projeto na máquina
+ng build --prod  # Prepara a aplicação para ser enviada em produção
 
 # Como instalar pacotes:
 npm install --save nome_do_pacote        # "--save" instala para desenvolvimento e produção
