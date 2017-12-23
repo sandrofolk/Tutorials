@@ -73,6 +73,7 @@ pip install dj-database-url
 pip install dj-static
 pip install django-extensions
 pip install django-test-without-migrations
+pip install django-debug-toolbar
 pip freeze > requirements.txt
 django-admin startproject nome_do_projeto .
 #alias manage='python $VIRTUAL_ENV/../manage.py'
