@@ -20,7 +20,7 @@ source ~/.bash_profile
 python -V
 ```
 
-## Como instalar o python no ubuntu 16.04.2 lts gnome
+## Como instalar o python no ubuntu
 ```console
 # Verificar a versão do python
 python -V
@@ -43,6 +43,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # Para ver se esta tudo certo basta digitar:
+# Caso o comando abaixo não funcione reinicie a máquina e tente novamente...
 pyenv
 
 # Para listar as versões de python estão instaladas basta digitar:
