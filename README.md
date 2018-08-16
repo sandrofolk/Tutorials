@@ -4,7 +4,12 @@ Guia pessoal
 ## Como instalar o python no mac:
 ```console
 #instalar o xcode.
+
 #instalar o homebrew
+#caso já tenha o homebrew instalado basta atualiza-lo:
+brew update
+brew upgrade
+
 #intalar o pyenv pelo homebrew.
 brew install pyenv
 pyenv install -l #> para ver as versões disponíveis para o python!
