@@ -65,7 +65,43 @@ pyenv global 3.6.1
 pyenv versions
 ```
 
-## Como criar projetos em django
+## Como criar projetos em django usando pipenv
+```console
+mkdir pasta_do_projeto
+cd pasta_do_projeto
+
+# Para instalar o pipenv:
+  # MAC
+  brew install pipenv
+  # Linux
+  pip install --upgrade pip
+  pip install pipenv
+
+pipenv --three
+pipenv install django
+pipenv install python-decouple
+pipenv install dj-database-url
+pipenv install dj-static
+pipenv install django-extensions
+pipenv install django-test-without-migrations
+pipenv install django-debug-toolbar
+pipenv shell
+django-admin startproject nome_do_projeto .
+#alias manage='python $VIRTUAL_ENV/../manage.py'
+cd nome_do_projeto/
+manage startapp core
+
+#git:
+git init
+#Configurar o arquivo .gitignore
+git add .gitignore
+git commit -m "Initial commit"
+git add .
+git commit -m "Import project"
+```
+
+
+## Como criar projetos em django usando virtualenv e pip requirements
 ```console
 mkdir pasta_do_projeto
 cd pasta_do_projeto
