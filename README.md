@@ -36,6 +36,9 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev li
 # Instalar o pyenv e copiar as 3 ultimas linhas da instalação
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
+# Como atualizar o pyenv
+pyenv update
+
 # Editar o arquivo bashrc e profile, colar as linhas copiadas, salvar, sair e reiniciar o terminal
 gedit ~/.bashrc
 export PATH="$HOME/.pyenv/bin:$PATH"
