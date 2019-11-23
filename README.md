@@ -139,7 +139,7 @@ git commit -m "Import project"
 heroku login
 heroku apps:create nome_do_projeto
 heroku plugins:install heroku-config
-heroku config:push
+heroku config:push -a nome_do_projeto
 git push heroku master --force
 heroku run python manage.py migrate
 
