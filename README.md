@@ -154,6 +154,33 @@ git push -u origin master
 heroku config:set EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend EMAIL_HOST=smtp.sendgrid.net EMAIL_PORT=587 EMAIL_USE_TLS=True EMAIL_HOST_USER=[USERNAME CRIADO NO SENDGRID.COM] EMAIL_HOST_PASSWORD=[PASSWORD CRIADO NO SENDGRID.COM]
 ```
 
+---
+
+## VueJS 2
+
+### Instalação
+
+#### Linux
+```console
+# https://github.com/nvm-sh/nvm
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/VERSAO_ATUAL/install.sh | bash
+
+# Fechar e abrir o terminal
+# Para verificar se deu certo rodar o seguinte comando:
+command -v nvm
+# Resultado deve ser "nvm"
+
+# Para verificar as versões disponíveis:
+nvm ls-remote
+
+# Para instalar uma versão específica:
+nvm install vx.x.x
+# Prefira a versão LTS
+
+# Para verificar as versões instaladas:
+nvm ls
+```
+
 ## Como instalar ionic2 no MAC
 ```console
 #Install Cordova
