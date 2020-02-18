@@ -179,6 +179,24 @@ nvm install vx.x.x
 
 # Para verificar as versões instaladas:
 nvm ls
+
+# Instalar o Vue CLI:
+# https://cli.vuejs.org/guide/installation.html
+npm install -g @vue/cli
+```
+
+### Criando projetos em VueJS2
+```console
+# Pelo terminal digite o seguinte comando de dentro da pasta de projetos:
+vue ui
+# ou então usando linha de comando:
+vue create nome-do-projeto
+
+# Depois acesse a pasta do projeto e suba o servidor:
+cd nome-do-projeto
+yarn serve
+ou
+vue ui
 ```
 
 Ferramenta WebStorm:
