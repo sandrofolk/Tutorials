@@ -181,6 +181,14 @@ nvm install vx.x.x
 nvm ls
 ```
 
+Ferramenta WebStorm:
+https://www.jetbrains.com/webstorm/nextversion/
+Instalar através do ToolBox:
+https://www.jetbrains.com/toolbox/app/
+#https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox
+
+---
+
 ## Como instalar ionic2 no MAC
 ```console
 #Install Cordova
