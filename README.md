@@ -162,6 +162,7 @@ heroku config:set EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend EMAI
 
 #### Linux
 ```console
+# Primeiro vamos ter que instalar o nvm que é o gerenciador de versões do node
 # https://github.com/nvm-sh/nvm
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/VERSAO_ATUAL/install.sh | bash
 
