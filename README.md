@@ -199,6 +199,15 @@ ou
 vue ui
 ```
 
+### Consumindo Json
+```console
+# Você pode usar um serviço pronto:
+https://jsonplaceholder.typicode.com/
+
+# ou então pode subir um server local usando json-server:
+https://github.com/typicode/json-server
+```
+
 Ferramenta WebStorm:
 https://www.jetbrains.com/webstorm/nextversion/
 Instalar através do ToolBox:
