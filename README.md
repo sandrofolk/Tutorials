@@ -217,6 +217,70 @@ https://www.jetbrains.com/toolbox/app/
 
 ---
 
+## CI / CD (Heroku + Gitlab + Django + VueJS)
+
+Com seu projeto criado no GitLab contendo duas pastas, uma para o backend em Django e uma para o frontend em VueJS você deve criar dois apps no Heroku:
+- nome-do-projeto-staging
+- nome-do-projeto-production
+
+Em seguida você deverá acessar suas configurações de conta do heroku e copiar o valor de sua API KEY:
+https://dashboard.heroku.com/account
+
+Feito isso vá para as configurações do projeto no GitLab na opção "CI / CD".
+Lá você deverá localizar a opção de variáveis e criar três variáveis com os seguintes nomes:
+HEROKU_API_KEY : Contendo o valor da chave da sua conta no Heroku que você copiou no passo anterior;
+HEROKU_APP_PRODUCTION : contendo o nome do aplicativo para produção (Ex .: nome-do-projeto-production);
+HEROKU_APP_STAGING : Contendo o nome do aplicativo para produção (Ex .: nome-do-projeto-staging).
+
+Agora você deve iniciar o git Flow em seu repositório para que possa existir a branch "release".
+```
+# Dentro do repositório do projeto basta executar o seguinte comando:
+git flow init
+```
+
+Agora vamos criar nosso arquivo ".gitlab-ci.yml" na raiz do projeto com o seguinte conteúdo:
+```
+build:backend:
+  image: python:3.8
+  script:
+  - python -V
+  - pipenv shell
+  - pipenv install
+  - python manage.py test
+
+build:frontend:
+  image: node:stable
+  cache:
+    paths:
+      - node_modules/
+      - .yarn
+  script:
+  - yarn install --production
+  - yarn test
+  - yarn build
+  artifacts: 
+    paths: 
+    - dist/
+
+staging:
+  stage: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=nome-do-projeto-staging --api-key=$HEROKU_API_KEY
+  only:
+  - master
+
+production:
+  stage: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=nome-do-projeto-production --api-key=$HEROKU_API_KEY
+  only:
+  - tags
+```
+
+---
+
 ## Como instalar ionic2 no MAC
 ```console
 #Install Cordova
