@@ -226,10 +226,10 @@ Com seu projeto criado no GitLab contendo duas pastas, uma para o backend em Dja
 Em seguida você deverá acessar suas configurações de conta do heroku e copiar o valor de sua API KEY:
 https://dashboard.heroku.com/account
 
-Feito isso vá para as configurações do projeto no GitLab na opção "CI / CD".
-Lá você deverá localizar a opção de variáveis e criar três variáveis com os seguintes nomes:
-HEROKU_API_KEY : Contendo o valor da chave da sua conta no Heroku que você copiou no passo anterior;
-HEROKU_APP_PRODUCTION : contendo o nome do aplicativo para produção (Ex .: nome-do-projeto-production);
+Feito isso vá para as configurações do projeto no GitLab na opção "CI / CD".  
+Lá você deverá localizar a opção de variáveis e criar três variáveis com os seguintes nomes:  
+HEROKU_API_KEY : Contendo o valor da chave da sua conta no Heroku que você copiou no passo anterior;  
+HEROKU_APP_PRODUCTION : contendo o nome do aplicativo para produção (Ex .: nome-do-projeto-production);  
 HEROKU_APP_STAGING : Contendo o nome do aplicativo para produção (Ex .: nome-do-projeto-staging).
 
 Agora você deve iniciar o git Flow em seu repositório para que possa existir a branch "release".
@@ -239,7 +239,7 @@ git flow init
 ```
 
 Agora vamos criar nosso arquivo ".gitlab-ci.yml" na raiz do projeto com o seguinte conteúdo:
-```
+```console
 build:backend:
   image: python:3.8
   script:
