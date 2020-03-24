@@ -217,11 +217,16 @@ https://jsonplaceholder.typicode.com/
 https://github.com/typicode/json-server
 ```
 
-Ferramenta WebStorm:
+Ferramenta WebStorm:  
 https://www.jetbrains.com/webstorm/nextversion/
-Instalar através do ToolBox:
+
+Instalar através do ToolBox:  
 https://www.jetbrains.com/toolbox/app/
-#https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox
+
+https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox
+
+- Erro "external file changes sync may be slow the current inotify(7) watch limit is too low"
+https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 
 ---
 
