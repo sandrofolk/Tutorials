@@ -33,6 +33,9 @@ python -V
 # Instalar as dependências do pyenv
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
 
+# Instalar as dependências do pandas
+sudo apt-get install liblzma-dev
+
 # Instalar o pyenv e copiar as 3 ultimas linhas da instalação
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
