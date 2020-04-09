@@ -231,6 +231,13 @@ https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox
 - Erro "external file changes sync may be slow the current inotify(7) watch limit is too low"
 https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 
+Erro:
+> SyntaxError: Failed to load plugin 'unicorn' declared in '.eslintrc.js ...
+
+É um erro de IDE se você estiver usando o JetBrains.
+Você precisa definir manualmente o interpretador do "node" na configuração do ESLint e também dos comandos rápidos!
+![Config. Projeto](Captura de tela de 2020-04-09 12-18-08.png)
+
 ---
 
 ## CI / CD (Heroku + Gitlab + Django + VueJS)
