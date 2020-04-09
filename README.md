@@ -239,6 +239,8 @@ Você precisa definir manualmente o interpretador do "node" na configuração do
 
 ![Config. Projeto](captura-de-tela-de-2020-04-09-12-18-08.png)
 
+![Config. Atalho](captura-de-tela-de-2020-04-09-14-46-53.png)
+
 ---
 
 ## CI / CD (Heroku + Gitlab + Django + VueJS)
