@@ -237,7 +237,7 @@ Erro:
 É um erro de IDE se você estiver usando o JetBrains.
 Você precisa definir manualmente o interpretador do "node" na configuração do ESLint e também dos comandos rápidos!
 
-![Config. Projeto](/Captura de tela de 2020-04-09 12-18-08.png)
+![Config. Projeto](captura-de-tela-de-2020-04-09-12-18-08.png)
 
 ---
 
