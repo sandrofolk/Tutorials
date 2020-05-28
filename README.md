@@ -83,6 +83,8 @@ cd pasta_do_projeto
   pip install --upgrade pip
   pip install pipenv
 
+pip install --upgrade pip
+pip install --upgrade pipenv
 pipenv --three
 pipenv install django
 pipenv install python-decouple
