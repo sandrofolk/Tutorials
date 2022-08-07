@@ -189,6 +189,8 @@ nvm ls-remote
 
 # Para instalar uma versão específica:
 nvm install vx.x.x
+# ou
+nvm install --lts
 # Prefira a versão LTS
 
 # Para verificar as versões instaladas:
